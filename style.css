@@ -1,0 +1,124 @@
+body {
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 65px;
+    background-color: rgb(30, 30, 30);
+    color: antiquewhite;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 50px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 70vh;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 10px;
+    padding: 34px;
+    background-image: url('music_background.jpeg');
+    background-size: 100%;
+    background-position-y:-100px;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+}
+
+
+.bottom {
+    position: sticky;
+    height: 130px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.icons i{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    text-align: center;
+}
+
+.songItemContainer {
+    margin-top: 74px;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 23px;
+}
+
+.songItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.timeStamp{
+    padding: 10px;
+}
+
+.timeStamp {
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
